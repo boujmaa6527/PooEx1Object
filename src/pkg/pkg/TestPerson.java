@@ -10,11 +10,18 @@ public class TestPerson {
 			Person wadle = new Person("wadle", "chris", 38, "liverpool", new City("liverpool", "uk"), null);
 			Person mbappe = new Person("mbappe", "killyan", 38, "paris", new City("madrid", "france"), null);
 			Person chirac = new Person("chirac", "jacques", 38, "correz", new City("paris", "france"), null);
-			
+			System.out.println(zidane.toString());
+			System.out.println("**************");
 			System.out.println(papin.toString());
 			System.out.println("**************");
 			System.out.println(benYedder.toString());
 			System.out.println("**************");
+			System.out.println(chirac.toString());
+			System.out.println("**************");
+			System.out.println(wadle.toString());
+			System.out.println("**************");
+			System.out.println("Apres le trie");
+			System.out.println("");
 			trierPerson(zidane);
 			System.out.println("**************");
 			trierPerson(benYedder);
@@ -23,7 +30,7 @@ public class TestPerson {
 			System.out.println("**************");
 			trierPerson(chirac);
 			System.out.println("**************");
-			System.out.println("**************");
+			
 
 			
 			
@@ -32,8 +39,8 @@ public class TestPerson {
 
 	public static void trierPerson(Person p) {
 		
-		City c = new City("paris");
-		if(p.getAdresse().equals("paris") || p.getVilleNaissance().equals(c)) {
+		// il faut l'attribut ville de naissance de City pour getCountry
+		if(p.getAdresse().equals("paris") || p.getVilleNaissance().getCountry().equalsIgnoreCase("france")) {
 			System.out.println(p.toString());
 		}
 		
