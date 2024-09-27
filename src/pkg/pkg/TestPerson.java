@@ -23,6 +23,8 @@ public class TestPerson {
 			System.out.println("**************");
 			trierPerson(chirac);
 			System.out.println("**************");
+			System.out.println("**************");
+
 			
 			
 	}
