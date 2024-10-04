@@ -4,12 +4,12 @@ public class Person {
 
 	//exercice 1.8
 	
-			public  String nom;
-			public String prenom;
-			public  double age;
-			public String adresse; 
-			public City villeNaissance; 
-			public City country; 
+			private  String nom;
+			private String prenom;
+			private  double age;
+			private String adresse; 
+			private City villeNaissance; 
+			private City country; 
 			
 		
 		//Exercice 1.9

@@ -8,7 +8,7 @@ public class City {
 	private String name;
 	private String country;
 	private double nbrOfPeople;
-	
+//	
 	
 	public City(String name, String country, double nbr) {
 		this.name =  name;
