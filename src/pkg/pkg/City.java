@@ -5,6 +5,7 @@ public class City {
 	//exercie 1.7
 	//Variable d'instance pour compter le nbr de city
 	static int counter = 0;
+	static int counter1 = 0;
 	private String name;
 	private String country;
 	private double nbrOfPeople;
